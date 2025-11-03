@@ -7,7 +7,9 @@ import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(19, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
+global button_pressed
 button_pressed = False
+
 def button_callback(channel):
     global button_pressed
     print("Button pressed!")
