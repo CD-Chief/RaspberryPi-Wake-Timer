@@ -33,7 +33,7 @@ def loop():
             sleep(1)
             print("Opening")
             lcd1602.openlight()
-            
+            button_pressed = False
         lcd1602.clear()
         lcd1602.write(0, 0, 'CPU: ' + get_cpu_temp() )# display CPU temperature
         lcd1602.write(0, 1, get_time_now() )   # display the time
